@@ -75,4 +75,4 @@ class ChatConsumer(AsyncWebsocketConsumer):
         if self.user_id:
             await self.channel_layer.group_discard(f"user_{self.user_id}", self.channel_name)
 
-        print(f"❌ Disconnected user {self.user_id}")
+        print(f" Disconnected user {self.user_id}")
